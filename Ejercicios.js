@@ -110,9 +110,9 @@ logAge();
 // 14. Muestra el mensaje 'La versión de JavaScript es' seguido de la variable `version` con el valor 2024 usando `console.log()`.
 function logVersion() {
     // Tu código aquí...
-    let mensaje = "La Version de JavaScript es"
-    let mensaje2 = "Version 2024"
-console.log(mensaje + mensaje2) 
+    const nombre = "JavaScript"
+    const version = 2024
+console.log(nombre , version) 
 }
 logVersion();
 
