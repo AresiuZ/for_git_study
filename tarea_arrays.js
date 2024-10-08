@@ -103,8 +103,8 @@ function findMinMaxPages(books) {
 }
 
 const libros = [350, 120, 540, 275, 390, 130, 670];
-const resultado = findMinMaxPages(libros);
-console.log(resultado);
+const resultado3 = findMinMaxPages(libros);
+console.log(resultado3);
 
 // Exportar las funciones para que puedan ser completadas y probadas
 module.exports = {
