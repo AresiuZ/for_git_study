@@ -130,6 +130,7 @@ function evaluarNumeros(a, b, c) {
     }
 }
 
+
 // Exportar todas las funciones
 export {
     verificarParidad,
