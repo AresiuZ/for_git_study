@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Información de Películas</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Color RGB</title>
-  </head>
+</head>
 
-  <body>
-    <div class="contenedor-principal">
-      <div class="contenedor-interno">
-        <div class="color">
-          <label for="rojo">Rojo (R)</label>
-          <input id="rojo" type="range" min="0" max="255" value="23" step="1">
-          <p id="texto-rojo"></p>
-        </div>
-
-        <div class="color">
-          <label for="verde">Verde (G)</label>
-          <input id="verde" type="range" min="0" max="255" value="41" step="1">
-          <p id="texto-verde"></p>
-        </div>
-
-        <div class="color">
-          <label for="azul">Azul (B)</label>
-          <input id="azul" type="range" min="0" max="255" value="56" step="1">
-          <p id="texto-azul"></p>
-        </div>
-      </div>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aplicación de Información de Películas</h1>
+            <input type="text" id="search-input" placeholder="Buscar películas...">
+            <button id="search-button">Buscar</button>
+        </header>
+        <main>
+            <section id="movie-list">
+                <h2>Películas Populares</h2>
+                <ul id="movies"></ul>
+            </section>
+            <section id="movie-details" class="hidden">
+                <h2>Detalles de la Película</h2>
+                <div id="details"></div>
+                <button id="add-to-favorites">Agregar a Favoritos</button>
+            </section>
+            <section id="favorites">
+                <h2>Películas Favoritas</h2>
+                <ul id="favorites-list"></ul>
+            </section>
+        </main>
     </div>
-    <script src="app.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
